@@ -14,7 +14,7 @@ export const authOptions: NextAuthOptions = {
       async authorize(credentials) {
         try {
           const res = await axios.post(
-            "http://172.16.4.160:8080/api/auth/login",
+            "http://10.14.33.87:8080/api/auth/login",
             {
               username: credentials?.username,
               password: credentials?.password,
